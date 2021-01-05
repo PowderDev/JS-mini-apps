@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css?family=Muli");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #2b88f0;
+  font-family: 'Muli', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+h3 {
+  color: white;
+  margin: 10px 0px 20px;
+  font-size: 1.6rem;
+}
+
+.container {
+  width: 500px;
+}
+
+textarea {
+  border: none;
+  display: block;
+  width: 100%;
+  height: 100px;
+  font-family: inherit;
+  padding: 0 0 20px;
+  margin: 0 0 20px;
+  font-size: 1.6rem;
+  -webkit-box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.5);
+}
+
+textarea:focus {
+  outline: none;
+}
+
+.tag {
+  background-color: #f0932b;
+  color: white;
+  border-radius: 50px;
+  padding: 10px 20px;
+  margin: 0 5px 10px 0;
+  font-size: 1.4rem;
+  display: inline-block;
+  -webkit-box-shadow: 1px 1px 5px black;
+          box-shadow: 1px 1px 5px black;
+}
+
+.tag-highlight {
+  background-color: blue;
+}
+/*# sourceMappingURL=style.css.map */

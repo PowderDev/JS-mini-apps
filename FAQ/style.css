@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css?family=Muli");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+  background-color: #f0f0f0;
+}
+
+h1 {
+  margin: 4rem 0 2.5rem;
+  text-align: center;
+}
+
+.faq-container {
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+.faq-container .faq {
+  background-color: transparent;
+  border: 1px solid #9fa4a8;
+  border-radius: 1rem;
+  margin: 1.8rem 0;
+  padding: 2.5rem;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+.faq-container .faq .faq-title {
+  margin: 0 3rem 0 0;
+}
+
+.faq-container .faq .faq-text {
+  display: none;
+  margin: 2.5rem 0 0;
+}
+
+.faq-container .faq.active {
+  background-color: white;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.faq-container .faq.active::before, .faq-container .faq.active::after {
+  content: '\f075';
+  font-family: 'Font Awesome 5 Free';
+  color: #2ecc71;
+  font-size: 7rem;
+  position: absolute;
+  opacity: .2;
+  top: 1.7rem;
+  left: 1.7rem;
+  z-index: 0;
+}
+
+.faq-container .faq.active::before {
+  color: #3498db;
+  top: -.8rem;
+  left: -2.5rem;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.faq-container .faq.active .faq-text {
+  display: block;
+}
+
+.faq-container .faq.active .faq-toggle .fa-times {
+  color: white;
+  display: block;
+}
+
+.faq-container .faq.active .faq-toggle .fa-chevron-down {
+  display: none;
+}
+
+.faq-container .faq.active .faq-toggle {
+  background-color: #9fa4a8;
+}
+
+.faq-container .faq .faq-toggle {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.2rem;
+  position: absolute;
+  top: 2.5rem;
+  right: 2.5rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+}
+
+.faq-container .faq .faq-toggle i {
+  pointer-events: none;
+}
+
+.faq-container .faq .faq-toggle:focus {
+  outline: 0;
+}
+
+.faq-container .faq .faq-toggle .fa-times {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */

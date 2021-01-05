@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #686de0;
+  font-family: 'Ubuntu', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 2rem;
+}
+
+.container {
+  background-color: white;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 8px 8px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 8px 8px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  padding: 5rem 2rem;
+  max-width: 100%;
+  width: 55rem;
+}
+
+.container h3 {
+  opacity: .5;
+  letter-spacing: 2px;
+}
+
+.container .joke {
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  line-height: 3rem;
+  margin: 4.5rem auto;
+  max-width: 50rem;
+}
+
+.container .btn {
+  background-color: #9f68e0;
+  border: 0;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.2);
+  padding: 1rem 3.5rem;
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.container .btn:focus {
+  outline: none;
+}
+
+.container .btn:active {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+/*# sourceMappingURL=style.css.map */

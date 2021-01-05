@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: steelblue;
+    color: white;
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.container{
+    background-color: rgba(0,0,0,0.4);
+    padding: 1.5rem 3.2rem;
+    border-radius: 5px;
+
+    h1{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    a{
+        text-decoration: none;
+        color: lightblue;
+    }
+}
+
+.form-control{
+    position: relative;
+    margin: 1.5rem 0 3rem;
+    width: 22rem;
+
+    input{
+        background: transparent;
+        border: 0;
+        border-bottom: 2px white solid;
+        display: block;
+        width: 100%;
+        padding-top: 2.4rem;
+        font-size: 18px;
+        color: white;
+
+        &:focus, &:valid{
+            outline: none;
+            border-bottom-color: lightblue;
+        }
+
+        &:focus+label span,
+        &:valid+label span {
+            color: lightblue;
+            transform: translateY(-1.8rem);
+        }
+    }
+
+    label{
+        position: absolute;
+        top: 1.1rem;
+        left: 0;
+        pointer-events: none;
+
+        span{
+            display: inline-block;
+            font-size: 1.2rem;
+            min-width: .4rem;
+            transition: .3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+    }
+
+}
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    background: lightblue;
+    padding: 1.2rem;
+    font-family: inherit;
+    font-size: 1rem;
+    border: none;
+    border-radius: .5rem;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:active {
+        transform: scale(0.97);
+    }
+}
+
+.text {
+    margin-top: 2.2rem;
+}
