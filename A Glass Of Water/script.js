@@ -11,7 +11,6 @@ smallCups.forEach((cup, i) =>{
 })
 
 function highLightCups(i, e){
-    console.log(i);
     if(smallCups[i].classList.contains('full')){
         smallCups.forEach(cup => cup.classList.remove('full'))
         for(let j = 0; j <= i; j++){
@@ -22,7 +21,6 @@ function highLightCups(i, e){
             smallCups[j].classList.add('full')
         }
     }
- 
 
     updateBigCup()
 }
@@ -49,3 +47,4 @@ function updateBigCup(){
     }
 
 }
+
