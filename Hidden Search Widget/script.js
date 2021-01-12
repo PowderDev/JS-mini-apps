@@ -6,7 +6,6 @@ const search = document.querySelector('.search'),
 btn.addEventListener('click', () =>{
     search.classList.toggle('active');
     input.focus()
-    console.log(i);
     i.classList.toggle('fa-search')
     i.classList.toggle('fa-cross')
 })
