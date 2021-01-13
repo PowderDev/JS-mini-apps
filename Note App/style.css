@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:wght@200;400&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #7bdaf3;
+  font-family: 'Poppins', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 100vh;
+  padding-top: 3rem;
+}
+
+button {
+  outline: none;
+}
+
+.add {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background-color: #9ec862;
+  border: none;
+  border-radius: 5px;
+  padding: .5rem 1rem;
+  cursor: pointer;
+  color: white;
+}
+
+.note {
+  background-color: white;
+  -webkit-box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.2);
+  margin: 30px 20px;
+  height: 320px;
+  width: 320px;
+  position: relative;
+}
+
+.note .tools {
+  background-color: #9ec862;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: .5rem;
+}
+
+.note .tools button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: .9rem;
+  margin-left: .6rem;
+}
+
+.note textarea {
+  outline: none;
+  font-family: inherit;
+  font-size: 1.2rem;
+  border: none;
+  height: 290px;
+  width: 100%;
+  padding: 20px;
+  resize: none;
+}
+
+.note .hidden {
+  display: none;
+}
+
+.note .main {
+  padding: 20px;
+}
+
+.note .time {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  height: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+}
+
+#podl {
+  z-index: -19;
+}
+/*# sourceMappingURL=style.css.map */
