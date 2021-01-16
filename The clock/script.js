@@ -39,12 +39,7 @@ function setTime(){
     hour.style.transform = `translate(-50%, -100%) rotate(${(time.getHours() * 15) / 2}deg)`
     minute.style.transform = `translate(-50%, -100%) rotate(${time.getMinutes() * 6}deg)`
     second.style.transform = `translate(-50%, -100%) rotate(${time.getSeconds() * 6}deg)`
-    if(time.getMinutes() < 10){
-        let min = `0${time.getMinutes()}`
-    }else{
-        min = time.getMinutes()
-    }
-    timeEl.innerHTML = `${time.getHours()}:${min}`
+    timeEl.innerHTML = `${time.getHours()}:${time.getMinutes() < 10 ? `0${time.getMinutes()}` : time.getMinutes()}`
     dateEl.innerHTML = `${months[time.getMonth()]}, ${days[time.getDay() - 1]} <span class="circle">${time.getDate()}</span>`
 }
 

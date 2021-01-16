@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli:300, 700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fbfcfe;
+  font-family: 'Muli', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  background-color: white;
+  border: 3px solid black;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.container .code-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 40px 0px;
+}
+
+.container .code {
+  border-radius: 5px;
+  font-size: 75px;
+  height: 120px;
+  width: 100px;
+  border: 1px solid #eee;
+  margin: 1%;
+  text-align: center;
+  font-weight: 300;
+  -moz-appearance: textfield;
+}
+
+.container .code::-webkit-outer-spin-button, .container .code::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.container .code:valid {
+  border-color: #3498db;
+  -webkit-box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.25);
+}
+
+.container .info {
+  display: inline-block;
+  background-color: #eaeaea;
+  line-height: 20px;
+  max-width: 400px;
+  color: #777;
+  border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+  .code-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .code {
+    font-size: 60px;
+    height: 80px;
+    max-width: 70px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

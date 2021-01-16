@@ -37,14 +37,14 @@ function getRandomSymbol(){
 function generatePassword(lower, upper, numbers, symbols, length){
     let generatedPassword = ''
     const typesCount = lower + upper + numbers + symbols
-    const typeArr = _.shuffle([{lower}, {upper}, {numbers}, {symbols}]).filter(item => Object.values(item)[0])
-
+    
     
     if(typesCount === 0 ){
         return ''
     }
 
     for(let i = 0; i < length; i += typesCount){
+        const typeArr = _.shuffle([{lower}, {upper}, {numbers}, {symbols}]).filter(item => Object.values(item)[0])
         typeArr.forEach(type =>{
             const funcName = Object.keys(type)[0]
             console.log(funcName);

@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #eeeeee;
+  font-family: 'Roboto', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.magic {
+  background-color: #ffd900;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  border: none;
+  border-radius: 10px;
+  padding: 7px 14px;
+  font-size: 1.3rem;
+  position: fixed;
+  top: 20px;
+  letter-spacing: 1px;
+  -webkit-box-shadow: 0 3px rgba(249, 202, 56, 0.5);
+          box-shadow: 0 3px rgba(249, 202, 56, 0.5);
+  outline: none;
+  z-index: 100;
+}
+
+.magic:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
+
+.boxes-container {
+  height: 500px;
+  width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+}
+
+.boxes-container.big {
+  width: 600px;
+  height: 600px;
+}
+
+.boxes-container.big .box {
+  -webkit-transform: rotateZ(360deg);
+          transform: rotateZ(360deg);
+}
+
+.boxes-container .box {
+  height: 125px;
+  width: 125px;
+  background-image: url("https://media.giphy.com/media/I5xVnGJRHZZf2/giphy.gif");
+  background-repeat: no-repeat;
+  background-size: 500px 500px;
+  position: relative;
+  -webkit-transition: .4s ease;
+  transition: .4s ease;
+}
+
+.boxes-container .box::after {
+  content: '';
+  background-color: #f6e58d;
+  position: absolute;
+  top: 8px;
+  right: -15px;
+  height: 100%;
+  width: 15px;
+  -webkit-transform: skewY(45deg);
+          transform: skewY(45deg);
+}
+
+.boxes-container .box::before {
+  content: '';
+  background-color: #ffc400;
+  position: absolute;
+  bottom: -15px;
+  left: 8px;
+  height: 15px;
+  width: 100%;
+  -webkit-transform: skewX(45deg);
+          transform: skewX(45deg);
+}
+/*# sourceMappingURL=style.css.map */
